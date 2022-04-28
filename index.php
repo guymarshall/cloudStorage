@@ -28,6 +28,7 @@ $table_columns = ['Filename', 'Filetype', 'Filesize'];
         <?php foreach ($files as $file): ?>
         <tr>
             <td><?php echo $file; ?></td>
+            <td><?php echo get_file_extension($file) ?></td>
         </tr>
         <?php endforeach; ?>
     <?php endif; ?>
