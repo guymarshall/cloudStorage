@@ -15,9 +15,7 @@
 </html>
 
 <?php
-    // get files list
     $files = scandir('uploads');
-    // iterate through and generate a table, one row for each file
     $table_columns = ['Filename', 'Filetype', 'Filesize'];
 ?>
 <table style="border: 1px solid black; border-collapse: collapse;">
