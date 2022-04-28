@@ -17,7 +17,6 @@
 <?php
     // get files list
     $files = scandir('uploads');
-    var_dump($files);
     // iterate through and generate a table, one row for each file
     $table_columns = ['Filename', 'Filetype', 'Filesize'];
 ?>
