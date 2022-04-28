@@ -16,26 +16,16 @@
 
 <?php
     // get files list
-    $files = [
-        0 => [
-            'filename' => 'tree',
-            'filetype' => '.jpg',
-            'filesize' => '243KB'
-        ],
-        1 => [
-            'filename' => 'backup',
-            'filetype' => '.zip',
-            'filesize' => '24MB'
-        ]
-    ];
+    $files = scandir('uploads');
+    var_dump($files);
     // iterate through and generate a table, one row for each file
-    $table_columns = ['filename', 'filetype', 'filesize'];
+    $table_columns = ['Filename', 'Filetype', 'Filesize'];
 ?>
 <table style="border: 1px solid black; border-collapse: collapse;">
     <tr>
-        <th>Filename</th>
-        <th>Filetype</th>
-        <th>Filesize</th>
+        <?php foreach ($table_columns as $column): ?>
+            <th><?php echo $column ?></th>
+        <?php endforeach; ?>
     </tr>
     <?php if (isset($files)): ?>
         <?php foreach ($files as $file): ?>
