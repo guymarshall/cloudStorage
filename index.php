@@ -32,3 +32,9 @@ $table_columns = ['Filename', 'Filetype', 'Filesize'];
         <?php endforeach; ?>
     <?php endif; ?>
 </table>
+
+<?php
+function get_file_extension($file) {
+    return explode('.', $file);
+}
+?>
