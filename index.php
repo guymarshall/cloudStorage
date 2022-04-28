@@ -29,9 +29,7 @@
     <?php if (isset($files)): ?>
         <?php foreach ($files as $file): ?>
         <tr>
-            <td><?php echo $file['filename']; ?></td>
-            <td><?php echo $file['filetype']; ?></td>
-            <td><?php echo $file['filesize']; ?></td>
+            <td><?php echo $file; ?></td>
         </tr>
         <?php endforeach; ?>
     <?php endif; ?>
