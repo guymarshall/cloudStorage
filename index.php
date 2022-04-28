@@ -15,7 +15,8 @@
 </html>
 
 <?php
-$files = scandir('uploads');
+// without . and ..
+$files = array_diff(scandir('uploads'), ['..', '.']);
 $table_columns = ['Filename', 'Filetype', 'Filesize'];
 ?>
 <table style="border: 1px solid black; border-collapse: collapse;">
