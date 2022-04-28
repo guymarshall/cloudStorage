@@ -15,8 +15,8 @@
 </html>
 
 <?php
-    $files = scandir('uploads');
-    $table_columns = ['Filename', 'Filetype', 'Filesize'];
+$files = scandir('uploads');
+$table_columns = ['Filename', 'Filetype', 'Filesize'];
 ?>
 <table style="border: 1px solid black; border-collapse: collapse;">
     <tr>
