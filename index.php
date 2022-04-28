@@ -29,14 +29,9 @@ $table_columns = ['Filename', 'Filetype', 'Filesize'];
         <?php foreach ($files as $file): ?>
         <tr>
             <td><?php echo $file; ?></td>
-            <td><?php echo get_file_extension($file) ?></td>
+            <td><?php echo pathinfo($file, PATHINFO_EXTENSION) ?></td>
+            <td><?php echo filesize($file) ?></td>
         </tr>
         <?php endforeach; ?>
     <?php endif; ?>
 </table>
-
-<?php
-function get_file_extension($file) {
-    return explode('.', $file);
-}
-?>
