@@ -17,7 +17,7 @@
 <?php
 // without . and ..
 $files = array_diff(scandir('uploads'), ['..', '.']);
-$table_columns = ['Filename', 'Filetype', 'Filesize'];
+$table_columns = ['Filename', 'Filetype'];
 ?>
 <table style="border: 1px solid black; border-collapse: collapse;">
     <tr>
@@ -30,7 +30,6 @@ $table_columns = ['Filename', 'Filetype', 'Filesize'];
         <tr>
             <td><?php echo $file; ?></td>
             <td><?php echo pathinfo($file, PATHINFO_EXTENSION) ?></td>
-            <td><?php echo filesize($file) ?></td>
         </tr>
         <?php endforeach; ?>
     <?php endif; ?>
