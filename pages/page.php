@@ -2,7 +2,7 @@
 
 class Page {
     function create_page($title, $content) {
-        $app_name = 'My Website';
+        $app_name = 'Cloud Storage';
         $head_html = '
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
