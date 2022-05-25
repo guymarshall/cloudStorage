@@ -24,16 +24,13 @@ class Page {
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/pages/index.php">Home</a>
+                                <a class="nav-link text-dark" href="/pages/index.php">Files</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/pages/todo.php">Todo</a>
+                                <a class="nav-link text-dark" href="/pages/upload.php">Upload</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/pages/collatz.php">Collatz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="/pages/factorial.php">Factorial</a>
+                                <a class="nav-link text-dark" href="/pages/bin.php">Bin</a>
                             </li>
                         </ul>
                     </div>
